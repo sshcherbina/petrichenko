@@ -1,0 +1,15 @@
+.crop {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow-y: hidden;
+  margin-left: 16px;
+}
+.two {
+  -webkit-line-clamp: 2;
+}
+.three {
+  -webkit-line-clamp: 3;
+}
+.four {
+  -webkit-line-clamp: 4;
+}
