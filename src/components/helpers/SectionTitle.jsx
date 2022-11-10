@@ -1,5 +1,6 @@
 import { Box, ListItemButton, Typography } from '@mui/material';
 import React from 'react';
+import '../../index.css'
 
 const SectionTitle = ({
   title,
@@ -21,7 +22,7 @@ const SectionTitle = ({
       }}
     >
       <Typography
-        sx={{ fontWeight: titleWeight, color: colorTitle, fontSize: titleSize }}
+        sx={{ fontWeight: titleWeight, color: colorTitle, fontSize: titleSize , fontFamily: 'TT Severs'}}
         // noWrap
       >
         {title}

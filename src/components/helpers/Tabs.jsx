@@ -7,6 +7,7 @@ import {
   TabUnstyled,
 } from '@mui/base';
 import uuid from 'react-uuid';
+import '../../index.css';
 
 const Tabs = ({ titles, tabs }) => {
   const [tabValue, setTabValue] = useState(titles[0]);

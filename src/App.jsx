@@ -1,6 +1,6 @@
 import NavBar from './components/NavBar';
 import Statistic from './components/Statistic';
-import { Box, Grid, IconButton, Stack, Typography } from '@mui/material';
+import { Box, Button, Grid, IconButton, ListItemButton, Stack, Typography } from '@mui/material';
 import StartImg from './components/StartImg';
 import NewsFeed, { newsList } from './components/NewsFeed';
 import Editor from './components/Editor';
@@ -12,6 +12,7 @@ import largeNews from './assets/large-news.png';
 import uuid from 'react-uuid';
 import NewsTimeList from './components/helpers/NewsTimeList';
 import MoreNewsButton from './components/helpers/MoreNewsButton';
+import './index.css';
 
 const articles = [
   {
@@ -34,9 +35,29 @@ const articles = [
   },
 ];
 
+// const theme = createTheme({
+//   typography: {
+//     fontFamily: 'TT Severs',
+//     fontSize: 16,
+//     fontWeightLight: 400,
+//     fontWeightRegular: 400,
+//     fontWeightMedium: 400,
+//     fontWeightBold: 400,
+//   },
+// });
+
 const App = () => {
   return (
+    // <ThemeProvider theme={theme}>
     <Stack sx={{ maxWidth: 1440, m: '0 auto' }}>
+      Всі
+      <Box>Bci</Box>
+      <Box fontWeight={600}>Bci</Box>
+      <Box sx={{fontWeight: 700}}>Bci</Box>
+      <Box sx={{fontWeight: 500}}>Bci</Box>
+      <ListItemButton>Bci</ListItemButton>
+      <Box sx={{fontWeight: 400}}>Bci</Box>
+      <Typography>Всі</Typography>
       <NavBar />
       <Statistic />
       <StartImg />
@@ -167,6 +188,7 @@ const App = () => {
         </Grid>
       </Grid>
     </Stack>
+    // </ThemeProvider>
   );
 };
 

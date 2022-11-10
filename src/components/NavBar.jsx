@@ -18,6 +18,7 @@ import facebook from '../assets/facebook.svg';
 import instagram from '../assets/instagram.svg';
 import youTube from '../assets/you-tube.svg';
 import live from '../assets/live.svg';
+import '../index.css';
 
 export const cities = ['Київ', 'Одеса', 'Харків'];
 
@@ -52,7 +53,7 @@ const NavBar = () => {
             sx={{ bgcolor: menu, ml: { sm: -3, md: 0 } }}
           >
             <ShortText />
-            <Typography sx={{ ml: 1, fontSize: 16 }}>Меню</Typography>
+            <Typography sx={{ ml: 1, fontSize: 16, fontFamily: 'TT Severs' }}>Меню</Typography>
           </ListItemButton>
           {cities.map((city) => (
             <ListItemButton
